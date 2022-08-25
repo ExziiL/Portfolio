@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 import { client, urlFor } from '../../client';
 import { images } from '../../constants';
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import './Skills.scss';
 
 const Skills = () => {
@@ -37,32 +37,32 @@ const Skills = () => {
 	const skills = [
 		{
 			name: 'HTML',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.html,
 		},
 		{
 			name: 'CSS',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.css,
 		},
 		{
 			name: 'Sass',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.sass,
 		},
 		{
 			name: 'React',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.react,
 		},
 		{
 			name: 'TypeScript',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.typescript,
 		},
 		{
 			name: 'Git',
-			bgColor: '',
+			bgColor: '#edf2f8',
 			icon: images.git,
 		},
 	];
@@ -138,4 +138,5 @@ const Skills = () => {
 	);
 };
 
-export default AppWrap(Skills, 'skills');
+// export default AppWrap(Skills, 'skills');
+export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__whitebg');
