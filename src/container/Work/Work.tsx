@@ -29,7 +29,7 @@ const Work = () => {
 			projectLink: 'https://github.com/ExziiL/Programmierpraktikum',
 			codeLink: 'https://github.com/ExziiL/Programmierpraktikum',
 			title: 'Schiffe versenken',
-			description: 'Programmierprojekt für mein Studium',
+			description: 'Programmierprojekt aus dem 3. Studiensemester',
 			tags: ['Java', 'Studium', 'Alle Projekte'],
 		},
 		{
