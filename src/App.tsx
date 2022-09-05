@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
+import { SocialMedia } from './components/SocialMedia';
 import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
 		<div className="app">
 			<Navbar />
 			<Header />
-			<About />
+			{/* <About /> */}
 			<Work />
 			<Skills />
 			<Testimonial />

@@ -9,23 +9,23 @@ import './Testimonial.scss';
 
 const Testimonial = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
-	const brands = [
-		{
-			imgUrl: images.asus,
-			name: 'Asus',
-			id: 1,
-		},
-		{
-			imgUrl: images.flutter,
-			name: 'Flutter',
-			id: 2,
-		},
-		{
-			imgUrl: images.spotify,
-			name: 'Spotify',
-			id: 3,
-		},
-	];
+	// const brands = [
+	// 	{
+	// 		imgUrl: images.clickconcepts,
+	// 		name: 'Asus',
+	// 		id: 1,
+	// 	},
+	// 	{
+	// 		imgUrl: images.besserTT,
+	// 		name: 'Flutter',
+	// 		id: 2,
+	// 	},
+	// 	{
+	// 		imgUrl: images.spotify,
+	// 		name: 'Spotify',
+	// 		id: 3,
+	// 	},
+	// ];
 	const testimonials = [
 		{ name: 'Michael', company: 'Clickconcepts', imgUrl: images.css, feedback: 'ganz okay' },
 		{ name: 'Thomas', company: 'Autocenter Lichtenfels', imgUrl: images.html, feedback: 'gut, die zusammenarbeit hat super funktioniert' },
@@ -72,7 +72,7 @@ const Testimonial = () => {
 				</>
 			)}
 
-			<div className="app__testimonial-brands app__flex">
+			{/* <div className="app__testimonial-brands app__flex">
 				{brands.map((brand) => (
 					<motion.div
 						whileInView={{ opacity: [0, 1] }}
@@ -85,9 +85,9 @@ const Testimonial = () => {
 						/>
 					</motion.div>
 				))}
-			</div>
+			</div> */}
 		</>
 	);
 };
 
-export default AppWrap(MotionWrap(Testimonial, 'app__testimonial'), 'testimonial', 'app__primarybg');
+export default AppWrap(MotionWrap(Testimonial, 'app__testimonial'), 'testimonials', 'app__primarybg');

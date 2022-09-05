@@ -59,13 +59,14 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-
+  
   .badge-cmp, .tag-cmp {
     padding: 1rem 2rem;
     border: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    background-color:rgba(255, 255, 255, 0.8);
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
@@ -76,7 +77,6 @@
     
     p {
       width: 100%;
-      text-transform: uppercase;
       text-align: right;
     }
   }
@@ -162,16 +162,21 @@
 .app__header-img {
   flex: 1;
   height: 100%;
+  // width: 50%;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   position: relative;
 
   img {
     width: 100%;
     object-fit: contain;
     z-index: 1;
+  }
+
+  .app__header-profile_big {
+    width: 75%;
   }
 
   .overlay_circle {

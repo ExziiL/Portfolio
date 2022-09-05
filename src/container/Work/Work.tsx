@@ -8,37 +8,38 @@ import './Work.scss';
 
 const Work = () => {
 	const [filteredWorks, setFilteredWorks] = useState([]);
-	const [activeFilter, setActiveFilter] = useState('All');
+	const [activeFilter, setActiveFilter] = useState('Alle Projekte');
 	const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
 	const allWorks = [
 		// TODO Java Uni Projekt auch einpflegen
+		// 'React JS', 'HTML/CSS', 'Studium', 'Java', 'Alle Projekte'
 		{
-			imgUrl: images.about01,
-			name: 'about03',
-			projectLink: "https://bobbyhadz.com/blog/typescript-property-does-not-exist-on-type-never#:~:text=The%20error%20%22Property%20does%20not,employee%5B'salary'%5D%20.",
-			codeLink: 'https://github.com',
-			title: 'Modern UI/UX Portfolio',
-			description: 'Modern UI/UX Portfolio done with React',
-			tags: ['All', 'UI/UX'],
+			imgUrl: images.besserTTScreenshot,
+			name: 'BesserTischtennis',
+			projectLink: 'https://bessertischtennis.de/',
+			codeLink: 'https://github.com/ExziiL/besserTischtennis',
+			title: 'BesserTischtennis.de',
+			description: 'Ein Redesign der Homepage für BesserTischtennis.de',
+			tags: ['React JS', 'Alle Projekte'],
 		},
 		{
-			imgUrl: images.about04,
-			name: 'about03',
-			projectLink: "https://bobbyhadz.com/blog/typescript-property-does-not-exist-on-type-never#:~:text=The%20error%20%22Property%20does%20not,employee%5B'salary'%5D%20.",
-			codeLink: 'https://github.com',
-			title: 'Modern UI/UX Portfolio',
-			description: 'Modern UI/UX Portfolio done with React',
-			tags: ['UI/UX'],
+			imgUrl: images.schiffeVersenken,
+			name: 'Programmierpraktikum',
+			projectLink: 'https://github.com/ExziiL/Programmierpraktikum',
+			codeLink: 'https://github.com/ExziiL/Programmierpraktikum',
+			title: 'Schiffe versenken',
+			description: 'Programmierprojekt für mein Studium',
+			tags: ['Java', 'Studium', 'Alle Projekte'],
 		},
 		{
-			imgUrl: images.about02,
-			name: 'about03',
-			projectLink: "https://bobbyhadz.com/blog/typescript-property-does-not-exist-on-type-never#:~:text=The%20error%20%22Property%20does%20not,employee%5B'salary'%5D%20.",
-			codeLink: 'https://github.com',
-			title: 'Modern UI/UX Portfolio',
-			description: 'Modern UI/UX Portfolio done with React',
-			tags: ['React JS'],
+			imgUrl: images.autocenterLifScreenshot,
+			name: 'Autocenter Lichtenfels',
+			projectLink: 'https://exziil.github.io/Autocenter/index.html',
+			codeLink: 'https://github.com/ExziiL/Autocenter',
+			title: 'Autocenter-Lichtenfels.de',
+			description: 'Redesign einer Homepage für eine Autowerkstatt',
+			tags: ['HTML/CSS', 'Alle Projekte'],
 		},
 	];
 
@@ -54,7 +55,7 @@ const Work = () => {
 		setTimeout(() => {
 			setAnimateCard({ y: 0, opacity: 1 });
 
-			if (item == 'All') {
+			if (item == 'Alle Projekte') {
 				// @ts-ignore
 				setFilteredWorks(allWorks);
 			} else {
@@ -67,10 +68,10 @@ const Work = () => {
 	return (
 		<>
 			<h2 className="head-text">
-				My Creative <span>Portfolio</span> Section
+				Meine <span>Projekte</span>
 			</h2>
 			<div className="app__work-filter">
-				{['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+				{['React JS', 'HTML/CSS', 'Studium', 'Java', 'Alle Projekte'].map((item, index) => (
 					<div
 						key={index}
 						onClick={() => handleWorkFilter(item)}

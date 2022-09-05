@@ -1,14 +1,14 @@
-import email from '../assets/email.png';
-import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
+import email from '../assets/email.png';
 import figma from '../assets/figma.png';
 import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
+import mobile from '../assets/mobile.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
@@ -23,7 +23,6 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
-import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -35,7 +34,27 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import autocenterLifScreenshot from '../assets/autocenterLifScreenshot-small.png';
+import besserTTScreenshot from '../assets/besserTTScreenshot-small.png';
+import frontastic from '../assets/frontastic.png';
+import schiffeVersenken from '../assets/schiffeVersenken-small.png';
+import storybook from '../assets/storybook.png';
+
+import besserTT from '../assets/besserTT.png';
+import clickconcepts from '../assets/clickconcepts.png';
+import profile_big from '../assets/profile_big.png';
+import tailwindcss from '../assets/tailwindcss.svg';
+
 export default {
+	schiffeVersenken,
+	clickconcepts,
+	besserTT,
+	profile_big,
+	tailwindcss,
+	storybook,
+	frontastic,
+	autocenterLifScreenshot,
+	besserTTScreenshot,
 	email,
 	mobile,
 	api,
@@ -59,7 +78,6 @@ export default {
 	about02,
 	about03,
 	about04,
-	profile,
 	circle,
 	logo,
 	adidas,

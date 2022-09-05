@@ -11,14 +11,29 @@ const Skills = () => {
 		{
 			works: [
 				{
-					name: 'Fachabitur',
-					company: 'BOS Coburg',
-					desc: 'Did my Fachabitur in Coburg',
+					name: 'Ausbildung zum Konstruktionsmechaniker',
+					company: 'Rösler Oberflächentechnik GmbH',
+					desc: '',
 				},
+			],
+			year: '2014',
+		},
+		{
+			works: [
 				{
-					name: 'Learned to code on my own',
-					company: 'quarantine',
-					desc: 'as the name said, I learned to code on my own at that time',
+					name: 'Fachhochschulreife',
+					company: 'FOS/BOS Coburg',
+					desc: 'Die Fachhochschulreife im Technikzweig absolviert.',
+				},
+			],
+			year: '2018',
+		},
+		{
+			works: [
+				{
+					name: 'Informatikstudium',
+					company: 'Hochschule Aalen',
+					desc: 'Oktober 2020 begann mein Informatikstudium mit der Fachrichtung Software Engineering.',
 				},
 			],
 			year: '2020',
@@ -26,9 +41,9 @@ const Skills = () => {
 		{
 			works: [
 				{
-					name: 'Frontend Developer',
-					company: 'Clickconcepts',
-					desc: 'Created Storybook for entire Project for Frontend Managers to use',
+					name: 'Werkstudent - Frontend Development',
+					company: 'Clickconcepts GmbH',
+					desc: 'Components mit React, TypeScript und Frontastic erstellt. Zudem habe ich Storybook in das Projekt eingebunden, gepflegt und weiterentwickelt.',
 				},
 			],
 			year: '2021',
@@ -65,11 +80,26 @@ const Skills = () => {
 			bgColor: '#edf2f8',
 			icon: images.git,
 		},
+		{
+			name: 'Storybook',
+			bgColor: '#edf2f8',
+			icon: images.storybook,
+		},
+		{
+			name: 'TailwindCSS',
+			bgColor: '#edf2f8',
+			icon: images.tailwindcss,
+		},
+		{
+			name: 'Frontastic',
+			bgColor: '#edf2f8',
+			icon: images.frontastic,
+		},
 	];
 
 	return (
 		<>
-			<h2 className="head-text">Skills & Experience</h2>
+			<h2 className="head-text">Skills & Erfahrungen</h2>
 
 			<div className="app__skills-container">
 				<motion.div className="app__skills-list">
@@ -117,16 +147,17 @@ const Skills = () => {
 										>
 											<h4 className="bold-text">{work.name}</h4>
 											<p className="p-text">{work.company}</p>
+											<p className="p-text app__skills-work-description">{work.desc}</p>
 										</motion.div>
 
-										<ReactTooltip
+										{/* <ReactTooltip
 											id={work.name}
 											effect="solid"
 											arrowColor="#fff"
 											className="skills-tooltip"
 										>
 											{work.desc}
-										</ReactTooltip>
+										</ReactTooltip> */}
 									</>
 								))}
 							</motion.div>

@@ -86,6 +86,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  margin-left: 1.5rem;
 
   @media screen and (max-width: 900px) {
     margin-top: 2rem;
@@ -111,15 +112,20 @@
     align-items: flex-start;
     margin-bottom: 1rem;
     cursor: pointer;
-
+    
     h4 {
       font-weight: 500;
-
     }
-
+    
     p {
       font-weight: 400;
+      color: black;
+      margin-top: 2.5px;
+    }
+
+    .app__skills-work-description {
       color: var(--gray-color);
+      font-weight: 400;
       margin-top: 5px;
     }
   }
@@ -131,6 +137,7 @@
   p {
     font-weight: 800;
     color: var(--secondary-color);
+    min-width: 42px;
   }
 
   @media screen and (max-width: 450px) {
