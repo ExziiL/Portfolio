@@ -2,7 +2,7 @@ import React from 'react';
 
 export const NavigationDots = ({ active }: any) => {
 	// const links = ['home', 'work', 'skills', 'testimonials', 'contact'];
-	const links = ['home', 'work', 'skills', 'contact'];
+	const links = ['home', 'skills', 'work', 'contact'];
 	return (
 		<div className="app__navigation">
 			{links.map((item, index) => (

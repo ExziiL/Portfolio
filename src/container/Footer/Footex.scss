@@ -113,3 +113,25 @@
     margin: 1rem 0;
   }
 }
+
+.app__footer-legal {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
+
+    display: flex;
+    
+    li {
+      cursor: pointer;
+      color: rgb(123, 123, 123);
+      flex-direction: column;
+      margin: 0rem 1rem;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}

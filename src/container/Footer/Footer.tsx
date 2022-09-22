@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
+import { client } from '../../client';
 import { images } from '../../constants';
-
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footex.scss';
 
@@ -13,7 +14,6 @@ const Footer = () => {
 
 	const handleChangeInput = (e: any) => {
 		const { name, value } = e.target;
-
 		setFormData({ ...formData, [name]: value });
 	};
 
@@ -22,13 +22,43 @@ const Footer = () => {
 
 		const contact = {
 			_type: 'contact',
-			name: name,
-			email: email,
-			message: message,
+			name: formData.name,
+			email: formData.email,
+			message: formData.message,
 		};
 
-		setLoading(false);
-		setIsFormSubmitted(true);
+		// client
+		// 	.create(contact)
+		// 	.then(() => {
+		// 		setLoading(false);
+		// 		setIsFormSubmitted(true);
+		// 	})
+		// 	.catch((error) => console.log(error));
+
+		setTimeout(() => {
+			setLoading(false);
+			setIsFormSubmitted(true);
+		}, 500);
+	};
+
+	let navigate = useNavigate();
+
+	function handleClickDatenschutz() {
+		navigate('/datenschutz');
+		// window.scrollTo({
+		// 	top: 0,
+		// 	left: 0,
+		// 	behavior: 'smooth',
+		// });
+	}
+
+	const handleClickImpressum = () => {
+		navigate('/impressum');
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
 	};
 
 	return (
@@ -50,8 +80,7 @@ const Footer = () => {
 					<a href="tel:+01743461407">+0174 3461407</a>
 				</div> */}
 			</div>
-
-			{/* {!isFormSubmitted ? (
+			{!isFormSubmitted ? (
 				<div className="app__footer-form app__flex">
 					<div className="app__flex">
 						<input
@@ -93,9 +122,15 @@ const Footer = () => {
 				</div>
 			) : (
 				<div>
-					<h3 className="head_text">Thank you for getting in touch</h3>
+					<h3 className="head_text">Die Nachricht wurde erfolgreich versendet!</h3>
 				</div>
-			)} */}
+			)}
+			<div className="app__footer-legal">
+				<ul>
+					<li onClick={handleClickImpressum}>Impressum</li>
+					<li onClick={handleClickDatenschutz}>Datenschutz</li>
+				</ul>
+			</div>
 		</>
 	);
 };

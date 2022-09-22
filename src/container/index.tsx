@@ -1,6 +1,9 @@
 export { default as About } from './About/About';
+export { default as Datenschutz } from './Datenschutz/Datenschutz';
 export { default as Footer } from './Footer/Footer';
 export { default as Header } from './Header/Header';
+export { default as Impressum } from './Impressum/Impressum';
+export { default as Landingpage } from './Landingpage/Landingpage';
 export { default as Skills } from './Skills/Skills';
 export { default as Testimonial } from './Testimonial/Testimonial';
 export { default as Work } from './Work/Work';

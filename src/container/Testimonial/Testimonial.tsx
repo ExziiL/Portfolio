@@ -28,7 +28,7 @@ const Testimonial = () => {
 	// ];
 	const testimonials = [
 		{ name: 'Michael', company: 'Clickconcepts', imgUrl: images.css, feedback: 'ganz okay' },
-		{ name: 'Thomas', company: 'Autocenter Lichtenfels', imgUrl: images.html, feedback: 'gut, die zusammenarbeit hat super funktioniert' },
+		{ name: 'Thomas', company: 'Autocenter Lichtenfels', imgUrl: images.html, feedback: 'gut, die zusammenarbeit hat super funktioniert, gut, die zusammenarbeit hat super funktioniertgut, die zusammenarbeit hat super funktioniert' },
 	];
 
 	const handleClick = (index: any) => {
@@ -38,7 +38,7 @@ const Testimonial = () => {
 	const test = testimonials[currentIndex];
 	return (
 		<>
-			<h2 className="app__testimonial-header head-text">Kundenrezensionen</h2>
+			<h2 className="app__testimonial-header head-text">Kundenreferenzen</h2>
 
 			{testimonials.length && (
 				<>
