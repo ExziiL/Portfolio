@@ -21,7 +21,7 @@ const Work = () => {
 			codeLink: 'https://github.com/ExziiL/besserTischtennis',
 			title: 'BesserTischtennis.de',
 			description: 'Ein Redesign der Homepage für BesserTischtennis.de. Das Projekt wurde im Jahr 2022 beendet.',
-			tags: ['React JS', 'Alle Projekte'],
+			tags: ['React JS', 'Alle Projekte', 'HTML/CSS'],
 		},
 		{
 			imgUrl: images.schiffeVersenken,
