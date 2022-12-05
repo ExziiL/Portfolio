@@ -20,7 +20,7 @@ const Work = () => {
 			projectLink: 'https://bessertischtennis.de/',
 			codeLink: 'https://github.com/ExziiL/besserTischtennis',
 			title: 'BesserTischtennis.de',
-			description: 'Ein Redesign der Homepage für BesserTischtennis.de',
+			description: 'Ein Redesign der Homepage für BesserTischtennis.de. Das Projekt wurde im Jahr 2022 beendet.',
 			tags: ['React JS', 'Alle Projekte'],
 		},
 		{
@@ -29,7 +29,7 @@ const Work = () => {
 			projectLink: 'https://github.com/ExziiL/Programmierpraktikum',
 			codeLink: 'https://github.com/ExziiL/Programmierpraktikum',
 			title: 'Schiffe versenken',
-			description: 'Programmierprojekt aus dem 3. Studiensemester',
+			description: 'Programmierprojekt aus dem 3. Studiensemester im Rahmen meines Software Engineering Studiums',
 			tags: ['Java', 'Studium', 'Alle Projekte'],
 		},
 		{
@@ -38,7 +38,7 @@ const Work = () => {
 			projectLink: 'https://exziil.github.io/Autocenter/index.html',
 			codeLink: 'https://github.com/ExziiL/Autocenter',
 			title: 'Autocenter-Lichtenfels.de',
-			description: 'Redesign einer Homepage für eine Autowerkstatt',
+			description: 'Redesign einer Homepage für eine Autowerkstatt aus dem Jahr 2020',
 			tags: ['HTML/CSS', 'Alle Projekte'],
 		},
 	];
@@ -153,4 +153,4 @@ const Work = () => {
 	);
 };
 
-export default AppWrap(MotionWrap(Work, 'app__works'), 'work', 'app__primarybg');
+export default AppWrap(MotionWrap(Work, 'app__works'), 'projekte', 'app__primarybg');

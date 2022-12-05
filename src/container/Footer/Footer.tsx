@@ -80,7 +80,7 @@ const Footer = () => {
 					<a href="tel:+01743461407">+0174 3461407</a>
 				</div> */}
 			</div>
-			{!isFormSubmitted ? (
+			{/* {!isFormSubmitted ? (
 				<div className="app__footer-form app__flex">
 					<div className="app__flex">
 						<input
@@ -124,7 +124,7 @@ const Footer = () => {
 				<div>
 					<h3 className="head_text">Die Nachricht wurde erfolgreich versendet!</h3>
 				</div>
-			)}
+			)} */}
 			<div className="app__footer-legal">
 				<ul>
 					<li onClick={handleClickImpressum}>Impressum</li>
@@ -135,4 +135,4 @@ const Footer = () => {
 	);
 };
 
-export default AppWrap(MotionWrap(Footer, 'app__footer'), 'contact', 'app__whitebg');
+export default AppWrap(MotionWrap(Footer, 'app__footer'), 'kontakt', 'app__whitebg');

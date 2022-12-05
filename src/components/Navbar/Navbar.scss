@@ -91,10 +91,12 @@
   align-items: center;
   background: var(--secondary-color);
 
+
   svg {
     width: 70%;
     height: 70%;
     color: var(--white-color);
+    cursor: pointer;
   }
 
   div {

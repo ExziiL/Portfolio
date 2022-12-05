@@ -8,7 +8,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
-	const links = ['home', 'skills', 'work', 'contact'];
+	const links = ['startseite', 'erfahrung', 'projekte', 'kontakt'];
 	let navigate = useNavigate();
 
 	return (

@@ -78,4 +78,4 @@ const Header = () => {
 	);
 };
 
-export default AppWrap(Header, 'home', 'app__whitebg');
+export default AppWrap(Header, 'startseite', 'app__whitebg');

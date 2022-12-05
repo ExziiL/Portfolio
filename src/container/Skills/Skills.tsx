@@ -7,22 +7,22 @@ import './Skills.scss';
 
 const Skills = () => {
 	const experiences = [
-		{
-			works: [
-				{
-					name: 'Ausbildung zum Konstruktionsmechaniker',
-					company: 'Rösler Oberflächentechnik GmbH',
-					desc: '',
-				},
-			],
-			year: '2014',
-		},
+		// {
+		// 	works: [
+		// 		{
+		// 			name: 'Ausbildung zum Konstruktionsmechaniker',
+		// 			company: 'Rösler Oberflächentechnik GmbH',
+		// 			desc: '',
+		// 		},
+		// 	],
+		// 	year: '2014',
+		// },
 		{
 			works: [
 				{
 					name: 'Fachhochschulreife',
 					company: 'FOS/BOS Coburg',
-					desc: 'Die Fachhochschulreife im Technikzweig absolviert.',
+					desc: 'Ich habe die Fachhochschulreife im Technikzweig absolviert.',
 				},
 			],
 			year: '2018',
@@ -32,7 +32,7 @@ const Skills = () => {
 				{
 					name: 'Informatikstudium',
 					company: 'Hochschule Aalen',
-					desc: 'Oktober 2020 begann mein Informatikstudium mit der Fachrichtung Software Engineering.',
+					desc: 'Oktober 2020 begann mein Informatikstudium mit dem Schwerpunkt "Software Engineering".',
 				},
 			],
 			year: '2020',
@@ -50,21 +50,6 @@ const Skills = () => {
 	];
 	const skills = [
 		{
-			name: 'HTML',
-			bgColor: '#edf2f8',
-			icon: images.html,
-		},
-		{
-			name: 'CSS',
-			bgColor: '#edf2f8',
-			icon: images.css,
-		},
-		{
-			name: 'Sass',
-			bgColor: '#edf2f8',
-			icon: images.sass,
-		},
-		{
 			name: 'React',
 			bgColor: '#edf2f8',
 			icon: images.react,
@@ -73,6 +58,21 @@ const Skills = () => {
 			name: 'TypeScript',
 			bgColor: '#edf2f8',
 			icon: images.typescript,
+		},
+		{
+			name: 'Sass',
+			bgColor: '#edf2f8',
+			icon: images.sass,
+		},
+		{
+			name: 'CSS',
+			bgColor: '#edf2f8',
+			icon: images.css,
+		},
+		{
+			name: 'HTML',
+			bgColor: '#edf2f8',
+			icon: images.html,
 		},
 		{
 			name: 'Git',
@@ -169,4 +169,4 @@ const Skills = () => {
 };
 
 // export default AppWrap(Skills, 'skills');
-export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__whitebg');
+export default AppWrap(MotionWrap(Skills, 'app__skills'), 'erfahrung', 'app__whitebg');
